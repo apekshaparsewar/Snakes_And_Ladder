@@ -52,14 +52,18 @@ public class Game
         int score;
         get_Player();
         getType();
-       // board.movePlayer(score);
         int p;
         do
         {
+        	System.out.println("Your Turn!!");
+        	try{System.in.read();}
+            catch(Exception e){}
             score = dice.rollDice();
-            System.out.println("dice value"+score);
+            System.out.println("Your Score :"+score);
             p = board.movePlayer(score);
-            System.out.println("position"+p);
+            System.out.println("\nYou are on "+p+"th positon.");
         }while(board.isGameOver(p) == false);
+        
+        System.out.println("Congratulations!!! you won the game");
     }
 }
