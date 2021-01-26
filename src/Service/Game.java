@@ -11,8 +11,8 @@ import java.util.Scanner;
 
 import Model.Board;
 import Model.Dice;
-import Model.crookedDice;
-import Model.simpleDice;
+import Model.CrookedDice;
+import Model.SimpleDice;
 
 
 public class Game
@@ -40,11 +40,11 @@ public class Game
         type = scanner.next().charAt(0);
         if(type == 'c' || type == 'C')
         {
-            dice = new crookedDice();
+            dice = new CrookedDice();
         }
         else
         {
-            dice = new simpleDice();
+            dice = new SimpleDice();
         }
     }
     public void Start()

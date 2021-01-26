@@ -9,7 +9,7 @@ import java.util.Random;
  * @author Apeksha Parsewar
  *
  */
-public class simpleDice implements Dice{
+public class SimpleDice implements Dice{
 
     @Override
     public int rollDice() {

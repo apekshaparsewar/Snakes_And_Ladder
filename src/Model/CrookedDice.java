@@ -6,7 +6,7 @@ package Model;
 
 import java.util.Random;
 
-public class crookedDice implements Dice {
+public class CrookedDice implements Dice {
 
     public int rollDice()
     {
